@@ -46,11 +46,11 @@ const About = () => {
               {/* Quick Stats */}
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <Card className="text-center" hover={false}>
-                  <div className="text-4xl font-bold text-blue-600 mb-2">3+</div>
+                  <div className="text-4xl font-bold text-blue-600 mb-2">10+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
                 </Card>
                 <Card className="text-center" hover={false}>
-                  <div className="text-4xl font-bold text-blue-600 mb-2">10+</div>
+                  <div className="text-4xl font-bold text-blue-600 mb-2">12+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">Technologies</div>
                 </Card>
               </div>
