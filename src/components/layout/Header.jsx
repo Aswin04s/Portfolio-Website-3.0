@@ -30,17 +30,18 @@ const Header = ({ darkMode, toggleDarkMode }) => {
   }, []);
 
   return (
-    <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg' 
-          : 'bg-white dark:bg-gray-900'
-      }`}
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
+    ${isScrolled
+          ? "bg-white/40 dark:bg-gray-900/50 backdrop-blur-lg shadow-xl border-b border-white/30 dark:border-gray-700/50"
+          : "bg-white/20 dark:bg-gray-800/30 backdrop-blur-md"
+        }
+  `}
     >
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <a href="#home" className="text-2xl font-bold text-blue-600 dark:text-blue-400 hover:scale-105 transition-transform">
-          &lt;AS /&gt;
+          &lt;ASWIN S /&gt;
         </a>
 
         {/* Desktop Menu */}
@@ -99,14 +100,14 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-800 shadow-lg animate-slide-up">
+        <div className="md:hidden bg-white/60 dark:bg-gray-900/80 backdrop-blur-xl shadow-2xl animate-slide-up border-b border-white/20 dark:border-gray-600/30">
           <ul className="flex flex-col space-y-4 p-6">
             {menuItems.map((item) => (
               <li key={item.name}>
-                <a 
+                <a
                   href={item.link}
                   onClick={handleLinkClick}
-                  className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium text-lg"
+                  className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-lg px-3 py-2 rounded-lg transition bg-white/10 dark:bg-gray-900/10 hover:bg-white/30 dark:hover:bg-gray-900/30 backdrop-blur-xs"
                 >
                   {item.name}
                 </a>
