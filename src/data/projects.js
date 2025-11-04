@@ -23,8 +23,8 @@ export const projectsData = [
     id: 2,
     title: "Appu's Aquarium - Website Design",
     description: "Responsive aquarium showcase website featuring modern UI design, interactive components, and seamless user experience built with React and Tailwind CSS.",
-    image: "/assets/images/projects/aquarium.png",
-    techStack: ["React.js", "Tailwind CSS", "JavaScript", "Vercel", "Responsive Design"],
+    image: "/assets/images/projects/APPU-AQUARIUM.png",
+    techStack: ["React.js", "Tailwind CSS", "JavaScript", "Vercel", "Responsive Design", "HTML5"],
     features: [
       "Responsive design with mobile-first Tailwind CSS approach",
       "Interactive slideshow component with smooth transitions",
@@ -33,8 +33,8 @@ export const projectsData = [
       "Optimized images and performance",
       "Cross-browser compatibility"
     ],
-    liveDemo: "https://appus-aquarium.vercel.app",
-    githubRepo: "https://github.com/aswin/aquarium-website",
+    liveDemo: "https://appu-s-aquarium-deployment.vercel.app/",
+    githubRepo: "https://github.com/Aswin04s/Appu-s-Aquarium-Deployment",
     category: "frontend",
     duration: "May 2025",
     role: "Frontend Developer"
@@ -57,6 +57,47 @@ export const projectsData = [
     category: "ai",
     duration: "January 2025 - May 2025",
     role: ""
+  },
+  {
+    id: 4,
+    title: "DailySpark Inspirational Quote Fetcher",
+    description: "A React app that fetches random inspirational quotes from a free API to inspire users daily. It uses React’s useState hook for state management and Tailwind CSS for a clean, responsive UI. Users click a button to get new quotes and see how many they’ve read, promoting mindfulness and positivity.",
+    image: "/assets/images/projects/daily-spark.png",
+    techStack: ["React.js", "Tailwind CSS", "JavaScript", "Vercel", "Responsive Design", "REST API"],
+    features: [
+      "Fetches random inspirational quotes from external API",
+      "Real-time quote display with smooth state transitions",
+      "Interactive counter tracking number of quotes read",
+      "Responsive design with gradient background styling",
+      "Clean and modern user interface with Tailwind CSS",
+      "One-click functionality for instant new quotes",
+      "Mobile-friendly layout that works on all devices"
+    ],
+    liveDemo: "https://daily-spark-inspirational-quote-fet.vercel.app/",
+    githubRepo: "https://github.com/Aswin04s/Daily-Spark-Inspirational-Quote-Fetcher",
+    category: "frontend",
+    duration: "June 2025",
+    role: ""
+  }, {
+    "id": 5,
+    "title": "VirtueHire - Smart Recruitment Platform",
+    "description": "A comprehensive Spring Boot backend for an HR recruitment platform that streamlines candidate assessment, HR management, and hiring workflows with multi-role authentication and payment integration.",
+    "image": "/assets/images/projects/virtue-hire.png",
+    "techStack": ["Spring Boot", "Java 17", "Spring Data JPA", "MySQL", "REST APIs", "Maven", "Thymeleaf", "Spring Security", "Hibernate"],
+    "features": [
+      "Multi-role authentication system (Admin, HR, Candidate)",
+      "Candidate assessment with 3 difficulty levels",
+      "File upload for resumes and ID proofs",
+      "Payment integration for subscription plans",
+      "Admin dashboard for platform oversight",
+      "HR candidate search and filtering",
+      "Question bank management system"
+    ],
+    "liveDemo": "",
+    "githubRepo": "https://github.com/Aswin04s/Virtue-Hire-Backend-Admin-Hr-Candidate-",
+    "category": "backend",
+    "duration": "October 2024 - Present",
+    "role": "Web Developer Intern"
   }
 ];
 

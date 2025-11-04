@@ -59,7 +59,7 @@ const Projects = () => {
             Want to see more of my work?
           </p>
           <a
-            href="https://github.com/aswin-s"
+            href="https://github.com/Aswin04s"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-all transform hover:scale-105 font-semibold"
