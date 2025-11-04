@@ -41,25 +41,6 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "Viral Genome Classifier",
-    description: "AI-powered hybrid LSTM-Transformer model for classifying viral genomes (MERS, SARS, COVID-19, Ebola, Dengue) achieving 89% accuracy with robust multiclass classification.",
-    image: "/assets/images/projects/genome-classifier.png",
-    techStack: ["Python", "TensorFlow", "LSTM", "Transformer", "SMOTEN", "Machine Learning"],
-    features: [
-      "Hybrid LSTM-Transformer architecture for sequence classification",
-      "89% accuracy in viral genome classification",
-      "SMOTEN oversampling to handle class imbalance",
-      "Processes multiple viral genomes (MERS, SARS, COVID-19, Ebola, Dengue)",
-      "Robust performance across different viral families",
-      "Comprehensive model evaluation and validation"
-    ],
-    githubRepo: "https://github.com/aswin/genome-classifier",
-    category: "ai",
-    duration: "January 2025 - May 2025",
-    role: ""
-  },
-  {
-    id: 4,
     title: "DailySpark Inspirational Quote Fetcher",
     description: "A React app that fetches random inspirational quotes from a free API to inspire users daily. It uses React’s useState hook for state management and Tailwind CSS for a clean, responsive UI. Users click a button to get new quotes and see how many they’ve read, promoting mindfulness and positivity.",
     image: "/assets/images/projects/daily-spark.png",
@@ -79,7 +60,7 @@ export const projectsData = [
     duration: "June 2025",
     role: ""
   }, {
-    "id": 5,
+    "id": 4,
     "title": "VirtueHire - Smart Recruitment Platform",
     "description": "A comprehensive Spring Boot backend for an HR recruitment platform that streamlines candidate assessment, HR management, and hiring workflows with multi-role authentication and payment integration.",
     "image": "/assets/images/projects/virtue-hire.png",
@@ -98,6 +79,24 @@ export const projectsData = [
     "category": "backend",
     "duration": "October 2024 - Present",
     "role": "Web Developer Intern"
+  }, {
+    id: 5,
+    title: "Viral Genome Classifier",
+    description: "AI-powered hybrid LSTM-Transformer model for classifying viral genomes (MERS, SARS, COVID-19, Ebola, Dengue) achieving 89% accuracy with robust multiclass classification.",
+    image: "/assets/images/projects/genome-classifier.png",
+    techStack: ["Python", "TensorFlow", "LSTM", "Transformer", "SMOTEN", "Machine Learning"],
+    features: [
+      "Hybrid LSTM-Transformer architecture for sequence classification",
+      "89% accuracy in viral genome classification",
+      "SMOTEN oversampling to handle class imbalance",
+      "Processes multiple viral genomes (MERS, SARS, COVID-19, Ebola, Dengue)",
+      "Robust performance across different viral families",
+      "Comprehensive model evaluation and validation"
+    ],
+    githubRepo: "https://github.com/aswin/genome-classifier",
+    category: "ai",
+    duration: "January 2025 - May 2025",
+    role: ""
   }
 ];
 
