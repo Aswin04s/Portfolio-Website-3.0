@@ -3,7 +3,7 @@ import { FaPaperPlane } from 'react-icons/fa';
 
 const ContactForm = () => {
   const form = useRef();
-  const [status, setStatus] = useState(''); // 'success', 'error', or ''
+  const [status, setStatus] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -26,7 +26,6 @@ const ContactForm = () => {
     setStatus('');
 
     try {
-      // ✅ Call your serverless function
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
@@ -39,7 +38,6 @@ const ContactForm = () => {
 
       if (response.ok && data.success) {
         setStatus('success');
-        // Clear form
         setFormData({
           name: '',
           email: '',
@@ -49,8 +47,6 @@ const ContactForm = () => {
         if (form.current) {
           form.current.reset();
         }
-
-        // Auto-clear success message after 5 seconds
         setTimeout(() => setStatus(''), 5000);
       } else {
         setStatus('error');
@@ -70,7 +66,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       className="max-w-2xl mx-auto space-y-6"
     >
-      {/* Name Field */}
+      {/* Name */}
       <div>
         <label
           htmlFor="name"
@@ -92,7 +88,7 @@ const ContactForm = () => {
         />
       </div>
 
-      {/* Email Field */}
+      {/* Email */}
       <div>
         <label
           htmlFor="email"
@@ -113,7 +109,7 @@ const ContactForm = () => {
         />
       </div>
 
-      {/* Subject Field */}
+      {/* Subject */}
       <div>
         <label
           htmlFor="subject"
@@ -135,7 +131,7 @@ const ContactForm = () => {
         />
       </div>
 
-      {/* Message Field */}
+      {/* Message */}
       <div>
         <label
           htmlFor="message"
@@ -153,18 +149,18 @@ const ContactForm = () => {
           minLength="10"
           maxLength="5000"
           className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-all resize-none"
-          placeholder="Tell me about your project or inquiry..."
+          placeholder="Tell me about your project..."
         ></textarea>
         <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
           {formData.message.length}/5000 characters
         </p>
       </div>
 
-      {/* Submit Button */}
+      {/* Submit Button - GRADIENT SUCCESS */}
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-blue-600 text-white py-4 rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2 font-semibold text-lg"
+        className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white py-4 rounded-xl hover:from-emerald-600 hover:to-teal-600 disabled:from-gray-400 disabled:to-gray-400 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105 hover:shadow-lg active:scale-95 flex items-center justify-center gap-2 font-semibold text-lg dark:from-emerald-600 dark:to-teal-500 dark:hover:from-emerald-500 dark:hover:to-teal-400"
       >
         {isSubmitting ? (
           <>
@@ -181,7 +177,7 @@ const ContactForm = () => {
 
       {/* Success Message */}
       {status === 'success' && (
-        <div className="p-4 bg-green-100 dark:bg-green-900 border border-green-400 dark:border-green-700 text-green-700 dark:text-green-200 rounded-lg text-center animate-fade-in">
+        <div className="p-4 bg-emerald-100 dark:bg-emerald-900 border border-emerald-400 dark:border-emerald-700 text-emerald-700 dark:text-emerald-200 rounded-lg text-center animate-fade-in">
           <p className="font-semibold text-lg">✅ Message sent successfully!</p>
           <p className="text-sm mt-2">Thank you for reaching out. I'll get back to you as soon as possible.</p>
         </div>

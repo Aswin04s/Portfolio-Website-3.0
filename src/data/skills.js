@@ -104,7 +104,7 @@ export const skillsData = {
     },
     {
       name: "VS Code",
-      icon: "SiVisualstudiocode",
+      icon: "SiVscode",  
       level: "Advanced",
       color: "#007ACC",
       description: "Primary IDE with extensions"

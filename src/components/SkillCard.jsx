@@ -7,11 +7,11 @@ const SkillCard = ({ skill }) => {
   const Icon = iconMap[skill.icon];
 
   return (
-    <div className="flex flex-col items-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+    <div className="flex flex-col items-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border border-gray-200 dark:border-gray-700">
       {Icon && (
         <div className="mb-4 transform group-hover:scale-110 transition-transform duration-300">
-          <Icon 
-            className="text-6xl" 
+          <Icon
+            className="text-6xl"
             style={{ color: skill.color }}
           />
         </div>
