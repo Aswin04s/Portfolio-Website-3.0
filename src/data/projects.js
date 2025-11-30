@@ -81,6 +81,33 @@ export const projectsData = [
     role: ""
   }, {
     id: 5,
+    "title": "NeighborWatch - Community Safety Platform",
+    "description": "Digital neighborhood watch system that bridges the gap between community concerns and municipal action. Enables residents to report issues, track resolutions, and maintain safer neighborhoods through transparent collaboration.",
+    "image": "/assets/images/projects/Neighborhood.png",
+    "techStack": [  
+      "Spring Boot 3.5.7",
+      "Java 17",
+      "MySQL Database",
+      "Spring Data JPA",
+      "Thymeleaf Templates",
+      "Bootstrap 5.3.0"
+    ],
+    "features": [
+      "Multi-category Issue Reporting System",
+      "Real-time Status Tracking with Visual Indicators",
+      "Priority-based Workflow Management",
+      "Advanced Search & Filtering by Location/Type/Status",
+      "Interactive Dashboard with Statistics",
+      "Role-based Access Control Ready",
+      "Mobile-Responsive Community Interface",
+      "RESTful API Architecture"
+    ],
+    "githubRepo": "https://github.com/Aswin04s/NeighborWatch-",
+    "category": "Civic Tech & Community Platform",
+    "duration": "September 2025",
+    "role": "backend"
+  }, {
+    id: 6,
     title: "Viral Genome Classifier",
     description: "AI-powered hybrid LSTM-Transformer model for classifying viral genomes (MERS, SARS, COVID-19, Ebola, Dengue) achieving 89% accuracy with robust multiclass classification.",
     image: "/assets/images/projects/genome-classifier.png",
