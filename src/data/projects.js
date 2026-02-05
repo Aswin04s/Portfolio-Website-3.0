@@ -103,7 +103,7 @@ export const projectsData = [
       "RESTful API Architecture"
     ],
     "githubRepo": "https://github.com/Aswin04s/NeighborWatch-",
-    "category": "Civic Tech & Community Platform",
+    "category": "backend",
     "duration": "September 2025",
     "role": "backend"
   }, {
