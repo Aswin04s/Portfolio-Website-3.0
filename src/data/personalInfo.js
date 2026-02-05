@@ -4,7 +4,7 @@ export const personalInfo = {
   tagline: "Full-Stack Developer | Java & Spring Boot | React Enthusiast",
   email: "sundarajuaswintdr@gmail.com",
   phone: "+91 8940409409",
-  location: "Coimbatore, TamilNadu, India",
+  location: "Chennai, TamilNadu, India",
 
   bio: "Innovative software developer skilled in Java, Spring Boot and React, with hands-on experience crafting user-centric web and backend solutions. Known for tackling tough engineering challenges, driving projects from concept to delivery, and adapting quickly to new technologies. Eager to contribute fresh ideas and technical excellence to a collaborative team building tomorrow's digital products.",
 
