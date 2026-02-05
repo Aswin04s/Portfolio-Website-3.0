@@ -124,6 +124,24 @@ export const projectsData = [
     category: "ai",
     duration: "January 2025 - May 2025",
     role: ""
+  },
+  {
+    id: 7,
+    title: "AquaSmart: Intelligent Aquarium Builder",
+    description: "A high-performance web application that simulates aquarium ecosystem building with a built-in biological compatibility engine to prevent species conflict.",
+    image: "/assets/images/projects/AquaSmart.png",
+    techStack: ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "Lucide React"],
+    features: [
+      "Real-time Species Compatibility Algorithm (Freshwater vs Saltwater vs Coldwater logic)",
+      "Dynamic Tank Capacity & Bioload Calculator",
+      "Asynchronous Checkout Workflow with simulated payment processing and loading states",
+      "Modular Logic architecture using Custom React Hooks"
+    ],
+    liveDemo: "https://aqua-smart-intelligent-aquarium-eco.vercel.app/", 
+    githubRepo: "https://github.com/Aswin04s/AquaSmart-Intelligent-Aquarium-Ecosystem-Builder",
+    category: "frontend",
+    duration: "2 Weeks",
+    role: "frontend"
   }
 ];
 
