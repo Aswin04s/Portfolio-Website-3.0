@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Card from './common/Card';
 
 const ProjectCard = ({ project }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700">
       {/* Project Image with Light Rounded Border */}
@@ -28,9 +31,19 @@ const ProjectCard = ({ project }) => {
           {project.title}
         </h3>
 
-        <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-3">
-          {project.description}
-        </p>
+        <div className="relative">
+          <p className={`text-gray-600 dark:text-gray-300 text-sm ${!isExpanded ? 'line-clamp-3' : ''}`}>
+            {project.description}
+          </p>
+          {project.description.length > 150 && (
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="mt-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 focus:outline-none"
+            >
+              {isExpanded ? 'Read Less' : 'Read More'}
+            </button>
+          )}
+        </div>
 
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2">
